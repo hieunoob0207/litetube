@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta property="og:locale" content="vi_VN" />
+
+<meta property="og:description" content="Trang web này là trang web rút gọn của youtube, chỉ duy nhất có tính năng tìm kiếm và xem video
+Ưu điểm của web là có thể giúp xem được youtube trên các thiết bị cũ không hỗ trợ (ví dụ: smart tv cũ, điện thoại quá cũ để xem youtube) và việc cắt giảm chức năng cũng khiến việc xem youtube mượt hơn nếu mạng quá chậm. Ngoài ra khi xem youtube trên trang web này sẽ không có quảng cáo và không bị thu thập thông tin, lịch sử xem, tìm kiếm... mà không cần cài đặt bất kì thứ gì(mình chưa test xem youtube khi tắt màn hình, các bạn thử test xem)"/>
+
+<meta property="og:site_name" content="YouTube Super Lite" />
+
+<meta property="og:title" content="YouTube Super Lite" />
+
+<meta property="og:url" content="litetube.ga"/>
+
+<meta property="og:image" content="https://i.imgur.com/wN2eRiw.jpeg" />
+    <title>YouTube Super Lite</title>
+
+
+  </head>
+  <body>
+  <div class="container">
+      <br>
+      <h1 class="text-center">
+          YouTube Super Lite
+      </h1>
+Trang web này là trang web rút gọn của youtube, chỉ duy nhất có tính năng tìm kiếm và xem video
+Ưu điểm của web là có thể giúp xem được youtube trên các thiết bị cũ không hỗ trợ (ví dụ: smart tv cũ, điện thoại quá cũ để xem youtube) và việc cắt giảm chức năng cũng khiến việc xem youtube mượt hơn nếu mạng quá chậm. Ngoài ra khi xem youtube trên trang web này sẽ không có quảng cáo và không bị thu thập thông tin, lịch sử xem, tìm kiếm... mà không cần cài đặt bất kì thứ gì(mình chưa test xem youtube khi tắt màn hình, các bạn thử test xem)
+      <br>
+      <form id="myForm" autocomplete="off">
+          <div class="form-group">
+            <input class="form-control" type="text" id="search" placeholder="Nội dung tìm kiếm" required>
+          </div>
+
+        </div>
+          <div class="form-group">
+              <button id="btn" class="btn btn-danger btn-block">
+                  Tìm kiếm
+              </button>
+          </div>
+      </form>
+      <table style="display: none;" id="table" class="table table-striped">
+        <thead>
+          <tr>
+            <th>Tiêu đề</th>
+            <th>Ảnh thu nhỏ</th>
+            <th>Kênh</th>
+          </tr>
+        </thead>
+        <tbody id="results">
+        </tbody>
+      </table>
+      <div id="pager">
+		<ul id="pagination" class="pagination-sm"></ul>
+	</div>
+  </div>
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="jquery.twbsPagination.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <script>
+      $("#beforedate").datepicker({
+
+      })
+      $("#afterdate").datepicker({
+
+})
+
+  </script>
+  <script src="script.js"></script>
+Trang web này được xây dựng trên <a href="https://developers.google.com/youtube/v3">api youtube v3</a>, source code <a href="https://github.com/gauti123456/AdvancedVideoSearch">AdvancedVideoSearch</a> và <a href="https://invidio.us/">invidio.us</a> là sever video
+Mọi thắc mắc liên hệ <a href="https://www.facebook.com/hieunoob0207/">Facebook</a>
+</html>
