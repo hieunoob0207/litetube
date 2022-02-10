@@ -5,7 +5,7 @@ $(document).ready(function () {
     recPerPage = 0,
     nextPageToken = "",
     totalPages = 0;
-  var API_KEY = "AIzaSyAiH18YrEWJSG9lPqfKVYO6Bkio0jeEVSM";
+  var API_KEY = "AIzaSyCr5TzS-iueEq6_Ax7uGpf_GiO5o7elzxc";
   var search = "";
   var duration = "any";
   var order = "relevance";
@@ -48,7 +48,7 @@ $(document).ready(function () {
 
     console.log(beforedate);
 
-    API_KEY = "AIzaSyAiH18YrEWJSG9lPqfKVYO6Bkio0jeEVSM";
+    API_KEY = "AIzaSyCr5TzS-iueEq6_Ax7uGpf_GiO5o7elzxc";
 
     var url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}
         &part=snippet&q=${search}&maxResults=${maxResults}&publishedAfter=${afterdate}&publishedBefore=${beforedate}&order=${order}&videoDuration=${duration}&type=video`;
